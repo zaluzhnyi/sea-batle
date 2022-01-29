@@ -1,6 +1,6 @@
-const missAudio = new Audio('../audio/miss.mp3');
-hitAudio = new Audio('../audio/hit.mp3');
-backgroundMusic = new Audio('../audio/backgroundMusic.mp3');
+const missAudio = new Audio('./audio/miss.mp3');
+hitAudio = new Audio('./audio/hit.mp3');
+backgroundMusic = new Audio('./audio/backgroundMusic.mp3');
 backgroundMusic.autoplay = true
 backgroundMusic.loop = true;
 
