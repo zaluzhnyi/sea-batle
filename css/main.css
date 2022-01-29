@@ -223,6 +223,12 @@ canvas {
     color: black;
 }
 
+.information-text p {
+    text-align: justify;
+    max-width: 500px;
+    margin: 5px;
+}
+
 .data_table {
     font-size: 22px;
     max-width: 30vw;
