@@ -1,0 +1,437 @@
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+a {
+    color: orange;
+}
+
+.spa {
+    background: url(../img/bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    position: relative;
+}
+
+.mute-btn {
+    border: 0;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 50% 50%;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
+.game {
+    display: block;
+    margin-bottom: 5px;
+    height: 50px;
+    width: 45vw;
+    background: #006680;
+    text-align: center;
+    font-size: 30px;
+    background-size: 1px 300%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    font-family: shadows into light;
+    cursor: pointer;
+}
+
+.records {
+    display: block;
+    margin-bottom: 5px;
+    height: 50px;
+    width: 40vw;
+    background: #006680;
+    text-align: center;
+    font-size: 30px;
+    font-family: shadows into light;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.options {
+    display: block;
+    margin-bottom: 5px;
+    height: 50px;
+    width: 35vw;
+    background: #006680;
+    font-size: 30px;
+    text-align: center;
+    font-family: shadows into light;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.help {
+    display: block;
+    margin-bottom: 5px;
+    height: 50px;
+    width: 30vw;
+    background: #006680;
+    font-size: 30px;
+    text-align: center;
+    font-family: shadows into light;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.menu {
+    display: block;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 50px;
+    max-width: 200px;
+    background: #006680;
+    font-size: 24px;
+    text-align: center;
+    font-family: shadows into light;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.game:hover {
+    background: #7A0000;
+    color: white;
+    -webkit-transform: rotate(-1deg);
+    transform: rotate(-2deg);
+}
+
+.records:hover {
+    background: #7A0000;
+    color: white;
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+}
+
+.help:hover {
+    background: #7A0000;
+    color: white;
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+}
+
+.menu:hover {
+    background: #7A0000;
+    color: white;
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+}
+
+.options:hover {
+    background: #7A0000;
+    color: white;
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+}
+
+.bg-page {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    line-height: 24px;
+    position: relative;
+    /* max-width: 50%; */
+    margin: 20px auto;
+    background-color: #023542;
+    padding: 20px
+}
+
+.bg-page:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-top: 20px solid transparent;
+    border-right: 20px solid #0f6590;
+    border-bottom: 20px solid #0f6590;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.menu-game a.glo {
+    color: #00c6ff;
+    padding: 10px 20px;
+    width: 100px;
+    text-decoration: none;
+    text-align: center;
+    margin: 20px auto;
+    display: block;
+    background-image: linear-gradient(to left, transparent, transparent 50%, #00c6ff 50%, #00c6ff);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .25s ease-in;
+    font: 400 18px tahoma;
+    border: 1px solid #00C6FF;
+}
+
+.menu-game a.glo:hover {
+    background-position: 0 0;
+    color: #fff;
+}
+
+.menu-game a.glo.disabled {
+    pointer-events: none;
+    /* делаем элемент неактивным для взаимодействия */
+    cursor: default;
+    /*  курсор в виде стрелки */
+    color: #888;
+    /* цвет текста серый */
+    border: 1px solid #888;
+}
+
+.menu-game {
+    background-color: white;
+    padding: 10px;
+    max-width: 140px;
+}
+
+.game-page {
+    display: flex;
+    flex-direction: row;
+}
+
+canvas {
+    width: 1000px;
+    height: 500px;
+}
+
+.information {
+    color: black;
+}
+
+.timer {
+    color: black;
+}
+
+.data_table {
+    font-size: 22px;
+    max-width: 30vw;
+    margin: 0 auto;
+}
+
+.data_table table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    background: white;
+    max-width: 70%;
+    width: 70%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.data_table th {
+    font-weight: normal;
+    color: #039;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    padding: 10px 8px;
+}
+
+.data_table td {
+    color: white;
+    padding: 9px 8px;
+    transition: .3s linear;
+}
+
+.records_body td:not(:last-child) {
+    border-right: 2px solid black;
+}
+
+.records_body tr:last-child {
+    border-bottom: 2px solid black;
+}
+
+.data_table tr:hover td {
+    cursor: pointer;
+    color: #6699ff;
+}
+
+.records-page .menu {
+    margin-top: 10px;
+}
+
+.page_title {
+    font-size: 23px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.page_title:before {
+    content: "";
+    border-bottom: 1px solid #4bb;
+    border-top: 1px solid rgb(231, 11, 11);
+    width: 4vw;
+    height: 0.1em;
+    position: absolute;
+    top: calc(1.4em - 1px);
+    margin-left: -4.2vw;
+}
+
+.page_title:after {
+    content: "";
+    border-bottom: 1px solid #4bb;
+    border-top: 1px solid rgb(231, 11, 11);
+    width: 4vw;
+    height: 0.1em;
+    position: absolute;
+    top: calc(1.4em - 1px);
+    margin-left: 5px;
+}
+
+.input-name {
+    max-width: 100px;
+    border: 1px solid #00C6FF;
+}
+
+.input-name:focus {
+    border: 3px solid #555;
+}
+
+.options-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+}
+
+.setting_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+}
+
+.setting_form span {
+    max-width: 200px;
+}
+
+.setting_item {
+    display: flex;
+    width: inherit;
+    justify-content: space-between;
+    margin-top: 5px;
+    align-self: center;
+}
+
+.setting_form input[type=text] {
+    max-height: 40px;
+    max-width: 100px;
+}
+
+.setting_form input[type=button] {
+    max-width: 150px;
+}
+
+.help-page .information-text::-webkit-scrollbar {
+    width: 10px;
+}
+
+.help-page .information-text::-webkit-scrollbar-track {
+    box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #f9f9fd;
+    border-radius: 10px;
+}
+
+.help-page .information-text::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(180deg, #00c6fb, #005bea);
+}
+
+.btn-reset {
+    width: 100px;
+    white-space: normal;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .menu-game {
+        display: flex;
+        flex-direction: row;
+        max-width: none;
+        align-items: center;
+    }
+    .menu-item {
+        align-self: center;
+    }
+    .menu-game a.glo {
+        width: 70px;
+        font: 400 16px tahoma;
+    }
+    .game-page {
+        flex-direction: column;
+    }
+    .setting_form {
+        width: 40vw;
+    }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 767px) {
+    .help-page {
+        height: 100vh;
+    }
+    .help-page .information-text {
+        height: 80%;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+    }
+    .content {
+        width: 80%;
+    }
+    .setting_form {
+        width: 60vw;
+    }
+    .bg-page {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .help-page {
+        height: 100vh;
+    }
+    .help-page .information-text {
+        height: 80%;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+    }
+    .content {
+        width: 90%;
+    }
+    .setting_form {
+        width: 70vw;
+    }
+    .bg-page {
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .game {
+        width: 70vw;
+    }
+    .records {
+        width: 65vw;
+    }
+    .options {
+        width: 60vw;
+    }
+    .help {
+        width: 55vw;
+    }
+}
